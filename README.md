@@ -71,7 +71,7 @@
 
 ```
 cd btfs-auto-test
-tail deail.log
+tail -f deail.log
 ```
 
 ```
