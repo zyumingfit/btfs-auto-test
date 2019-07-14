@@ -4,7 +4,7 @@
   - python2.7+ installed
   - paramiko installed
     ```
-    pip install paramiko
+    sudo pip install paramiko
     ```
   - make sure that binary and xxxx_identity_file specified in these configurations exist on your system
     ```python
