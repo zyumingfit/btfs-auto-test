@@ -1,5 +1,34 @@
 # btfs-auto-test
 
+### requirements
+  - python2.7+ installed
+  - paramiko installed
+    ```
+    pip install paramiko
+    ```
+  - make sure that binary and xxxx_identity_file specified in these configurations exist on your system
+    ```python
+    #btfs binary to be installed
+    binary = '/Users/tron/btfs-test/btfs-binary'
+
+    #east asia hk node
+    node0_hostname = 'btfs-hk-test1.eastasia.cloudapp.azure.com'
+    node0_username = 'btfs_admin'
+    node0_identity_file = '/Users/tron/btfs-test/id_rsa_btfs_zym'
+
+    #west us node
+    node1_hostname = 'btfs-us-test1.westus2.cloudapp.azure.com'
+    node1_username = 'btfs_admin'
+    node1_identity_file = '/Users/tron/btfs-test/id_rsa_btfs_zym'
+
+    #east us node
+    node2_hostname = 'btfs-us-test2.eastus2.cloudapp.azure.com'
+    node2_username = 'btfs_admin'
+    node2_identity_file = '/Users/tron/btfs-test/id_rsa_btfs_zym'
+    ```
+### usage
+    python start.py
+
 ### output of test results
 ```shell
 0.Initialize three nodes
