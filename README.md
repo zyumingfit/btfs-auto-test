@@ -6,6 +6,19 @@
     ```
     sudo pip install paramiko
     ```
+  - btfs binary
+  
+    download link：https://github.com/TRON-US/btfs-binary-releases
+    Choose linux-amd64 version
+    
+  - ssh private key 
+    
+    Two ways to get the private key of the login server：
+    
+      1.And I ask for a private key
+      
+      2.Use "ssh-keygen -m PEM to" generate a key pair, then append the public key to the server's ~/.ssh/authorized_keys file，cannot use "ssh-genkey" without "-m PEM" because paramiko does not recognize private keys generated using "ssh-genkey" without "-m PEM"
+    
   - make sure that binary and xxxx_identity_file specified in these configurations exist on your system
     ```python
     #btfs binary to be installed
@@ -26,9 +39,7 @@
     node2_username = 'btfs_admin'
     node2_identity_file = '/Users/tron/btfs-test/id_rsa_btfs_zym'
     ```
-      
-    **Note：how to create a ssh key pair to login to the remote server:** 
-      - **Use "ssh-keygen -m PEM to" generate a key pair, then append the public key to the server's ~/.ssh/authorized_keys file，cannot use "ssh-genkey" without "-m PEM" because paramiko does not recognize private keys generated using "ssh-genkey" without "-m PEM"**
+     
 ### usage
     python start.py
 
