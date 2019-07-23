@@ -9,6 +9,7 @@
   - btfs binary
   
     download link：https://github.com/TRON-US/btfs-binary-releases
+    
     Choose linux-amd64 version
     
   - ssh private key 
