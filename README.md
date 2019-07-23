@@ -16,7 +16,7 @@
     
       1.Contact me to get the private key
       
-      2.Use "ssh-keygen -m PEM to" generate a key pair, then append the public key to the server's ~/.ssh/authorized_keys file，cannot use "ssh-genkey" without "-m PEM" because paramiko does not recognize private keys generated using "ssh-genkey" without "-m PEM"
+      2.Use "ssh-keygen -m PEM" to generate a key pair, then append the public key to the server's ~/.ssh/authorized_keys file，cannot use "ssh-genkey" without "-m PEM" because paramiko does not recognize private keys generated using "ssh-genkey" without "-m PEM"
   
   - Specify the version of btfs you want to test in the start.py file
   
