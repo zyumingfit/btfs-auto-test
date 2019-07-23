@@ -16,7 +16,7 @@
     
     Two ways to get the private key of the login server：
     
-      1.And I ask for a private key
+      1.Contact me to get the private key
       
       2.Use "ssh-keygen -m PEM to" generate a key pair, then append the public key to the server's ~/.ssh/authorized_keys file，cannot use "ssh-genkey" without "-m PEM" because paramiko does not recognize private keys generated using "ssh-genkey" without "-m PEM"
     
