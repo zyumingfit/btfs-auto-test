@@ -7,21 +7,29 @@
     sudo pip install paramiko
     ```
   - btfs binary
-  
     download link：https://github.com/TRON-US/btfs-binary-releases
     
     Choose linux-amd64 version
     
   - ssh private key 
-    
     Two ways to get the private key of the login server：
     
       1.Contact me to get the private key
       
       2.Use "ssh-keygen -m PEM to" generate a key pair, then append the public key to the server's ~/.ssh/authorized_keys file，cannot use "ssh-genkey" without "-m PEM" because paramiko does not recognize private keys generated using "ssh-genkey" without "-m PEM"
+  
+  - Specify the version of btfs you want to test in the start.py file
+  
+    btfs-auto-test will check if the version of the binary is the same as the version you specified, preventing the wrong version from being tested.
     
   - make sure that binary and xxxx_identity_file specified in these configurations exist on your system
     ```python
+    #btfs version to be tested
+    version = '0.0.4'
+
+    #Command execution interval(uint s)
+    btfs_cmd_interval = 10
+
     #btfs binary to be installed
     binary = '/Users/tron/btfs-test/btfs-binary'
 
