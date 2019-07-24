@@ -104,7 +104,7 @@ class BtfsNode():
 
         res = self.exec_btfs_command(self.btfs.with_args('init'))
         if not res.endswith('readme'):
-            raise
+            raise Exception("btfs init fail")
 
 
     @result
